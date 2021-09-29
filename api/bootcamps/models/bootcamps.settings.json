@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bootcamps",
+  "info": {
+    "name": "bootcamps"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}
