@@ -16,6 +16,10 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "dates": {
+      "via": "career",
+      "collection": "dates"
     }
   }
 }

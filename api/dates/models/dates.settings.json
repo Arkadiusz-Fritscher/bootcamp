@@ -29,7 +29,8 @@
       "model": "bootcamps"
     },
     "career": {
-      "model": "career"
+      "model": "career",
+      "via": "dates"
     },
     "duration": {
       "type": "integer"
@@ -44,7 +45,8 @@
       "type": "boolean"
     },
     "address": {
-      "model": "address"
+      "model": "address",
+      "via": "dates"
     }
   }
 }
