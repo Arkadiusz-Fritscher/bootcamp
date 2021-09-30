@@ -27,7 +27,7 @@
       "via": "bootcamp",
       "collection": "dates"
     },
-    "Locations": {
+    "locations": {
       "type": "component",
       "repeatable": true,
       "component": "locations.locations"
