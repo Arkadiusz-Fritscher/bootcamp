@@ -18,9 +18,6 @@
     "dateEnd": {
       "type": "date"
     },
-    "location": {
-      "type": "string"
-    },
     "hourStart": {
       "type": "time"
     },
@@ -45,6 +42,9 @@
     },
     "fulltime": {
       "type": "boolean"
+    },
+    "address": {
+      "model": "address"
     }
   }
 }

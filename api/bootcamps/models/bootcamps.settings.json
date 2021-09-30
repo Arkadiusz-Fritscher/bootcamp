@@ -24,8 +24,13 @@
       "type": "string"
     },
     "dates": {
-      "collection": "dates",
-      "via": "bootcamp"
+      "via": "bootcamp",
+      "collection": "dates"
+    },
+    "Locations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "locations.locations"
     }
   }
 }
