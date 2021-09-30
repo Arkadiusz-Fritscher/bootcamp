@@ -25,6 +25,7 @@
       "type": "string"
     },
     "bootcamp": {
+      "via": "addresses",
       "model": "bootcamps"
     },
     "number": {
