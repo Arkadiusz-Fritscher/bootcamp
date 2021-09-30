@@ -29,10 +29,6 @@
     },
     "number": {
       "type": "string"
-    },
-    "dates": {
-      "via": "address",
-      "collection": "dates"
     }
   }
 }
