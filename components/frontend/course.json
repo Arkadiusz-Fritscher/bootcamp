@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_frontend_courses",
+  "info": {
+    "name": "course",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

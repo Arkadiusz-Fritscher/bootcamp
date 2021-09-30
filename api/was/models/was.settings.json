@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "were",
+  "info": {
+    "name": "was"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "das": {
+      "type": "string"
+    },
+    "gehtnicht": {
+      "type": "boolean"
+    }
+  }
+}

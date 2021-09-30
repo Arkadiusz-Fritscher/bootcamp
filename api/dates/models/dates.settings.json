@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dates",
+  "info": {
+    "name": "dates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dateStart": {
+      "type": "date"
+    },
+    "dateEnd": {
+      "type": "date"
+    },
+    "location": {
+      "type": "string"
+    },
+    "hourStart": {
+      "type": "time"
+    },
+    "hourEnd": {
+      "type": "time"
+    },
+    "bootcamp": {
+      "via": "dates",
+      "model": "bootcamps"
+    },
+    "career": {
+      "model": "career"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "remote": {
+      "type": "boolean"
+    },
+    "fulltime": {
+      "type": "boolean"
+    }
+  }
+}
