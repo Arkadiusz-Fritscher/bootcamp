@@ -8,44 +8,52 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "dateStart": {
-      "type": "date"
+    "start": {
+      "type": "datetime"
     },
-    "dateEnd": {
-      "type": "date"
-    },
-    "hourStart": {
-      "type": "time"
-    },
-    "hourEnd": {
-      "type": "time"
+    "end": {
+      "type": "datetime"
     },
     "bootcamp": {
       "via": "dates",
-      "model": "bootcamps"
+      "model": "bootcamp"
     },
-    "career": {
-      "model": "career",
+    "language": {
+      "via": "dates",
+      "model": "language"
+    },
+    "address": {
+      "via": "dates",
+      "model": "location"
+    },
+    "profession": {
+      "model": "course",
       "via": "dates"
     },
     "duration": {
-      "type": "integer"
+      "type": "integer",
+      "default": 12,
+      "required": true
+    },
+    "fulltime": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "remote": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     },
     "price": {
       "type": "decimal"
     },
-    "remote": {
-      "type": "boolean"
-    },
-    "fulltime": {
-      "type": "boolean"
-    },
-    "address": {
-      "model": "address"
+    "url": {
+      "type": "string"
     }
   }
 }

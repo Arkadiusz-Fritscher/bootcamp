@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratings",
+  "info": {
+    "name": "rating",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rating": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "ratings"
+    },
+    "review": {
+      "type": "richtext",
+      "required": true
+    },
+    "bootcamp": {
+      "model": "bootcamp",
+      "via": "ratings"
+    }
+  }
+}

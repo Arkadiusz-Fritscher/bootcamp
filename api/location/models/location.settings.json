@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "bootcamp": {
+      "via": "addresses",
+      "model": "bootcamp"
+    },
+    "dates": {
+      "via": "address",
+      "collection": "dates"
+    }
+  }
+}

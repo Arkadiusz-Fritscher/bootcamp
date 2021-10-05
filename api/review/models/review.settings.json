@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "review": {
+      "type": "richtext"
+    },
+    "bootcamp": {
+      "model": "bootcamp",
+      "via": "reviews"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "profession": {
+      "model": "course",
+      "via": "reviews"
+    }
+  }
+}

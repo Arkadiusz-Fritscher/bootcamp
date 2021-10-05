@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "languages",
   "info": {
-    "name": "language"
+    "name": "language",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,8 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "dates": {
+      "via": "language",
+      "collection": "dates"
+    },
+    "bootcamp": {
+      "via": "languages",
+      "model": "bootcamp"
     }
   }
 }

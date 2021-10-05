@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "profession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "bootcamp": {
+      "via": "professions",
+      "model": "bootcamp"
+    },
+    "dates": {
+      "via": "profession",
+      "collection": "dates"
+    },
+    "reviews": {
+      "via": "profession",
+      "collection": "review"
+    }
+  }
+}
