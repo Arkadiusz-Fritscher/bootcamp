@@ -16,9 +16,9 @@
       "type": "integer"
     },
     "user": {
+      "via": "ratings",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "ratings"
+      "model": "user"
     },
     "review": {
       "type": "richtext",
